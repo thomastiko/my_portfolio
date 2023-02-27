@@ -1,0 +1,285 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "icon-list";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+
+
+body,html {
+  overflow-x: hidden;
+  background-color: #3b3b3b;
+
+}
+.title {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: default;
+
+}
+
+.title h1 {
+  font-size: 11rem;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  max-height: 70%;
+  width: 100%;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  -webkit-text-stroke: #222222;
+  text-shadow: 5px 5px 0px #222222;
+}
+.webgl {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+
+.thanks {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.thanks-text {
+  display: flex;
+  height: fit-content;
+}
+
+.thanks-text p {
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
+.add p {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 2px solid white;
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+      typing 2s steps(40, end),
+      blink .6s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+
+  to {
+      width: 100%;
+  }
+
+}
+
+@keyframes blink {
+  0% {
+      border-color: white;
+  }
+
+  40% {
+      border-color: white;
+  }
+
+  60% {
+      border-color: transparent;
+  }
+
+  100% {
+      border-color: transparent;
+  }
+}
+
+.title-section {
+  cursor: default;
+  width: fit-content;
+  height: fit-content;
+  padding-top: 50px;
+}
+
+.title-section h1 {
+  font-family: 'Anton', sans-serif;
+  color: white;
+  font-size: 10rem;
+  line-height: 50px;
+  font-weight: 400;
+  width: fit-content;
+
+
+}
+
+.title-section:hover>#middle {
+  animation: colors 1s infinite;
+}
+
+@keyframes colors {
+  0% {
+      color: #7AFFB6;
+  }
+
+  20% {
+      color: #E86558;
+  }
+
+  40% {
+      color: #6E75FF;
+  }
+
+  60% {
+      color: #EBCB4D;
+  }
+
+  80% {
+      color: #FEADFF;
+  }
+
+  100% {
+      color: #7AFFB6;
+  }
+}
+
+#font-outline-black {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+#about-text {
+  font-family: 'Space Mono', monospace;
+  color: white;
+  font-size: 1.2rem;
+  width: 50%;
+}
+.word-decoration {
+  color: #f78185;
+}
+.marquee {
+  margin: 0 auto;
+  width: 60%;
+  height: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.marquee:before,
+.marquee:after {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 30px;
+  content: "";
+  z-index: 1;
+}
+
+.marquee:before {
+  left: 0;
+}
+
+.marquee:after {
+  right: 0;
+}
+
+.marquee__content {
+  width: 300%;
+  display: flex;
+  line-height: 30px;
+  animation: marquee 20s linear infinite forwards;
+}
+
+.marquee__content:hover {
+  animation-play-state: paused;
+}
+
+.list-inline {
+  display: flex;
+  justify-content: space-around;
+  width: 33.33%;
+  /* reset list */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
+  color: #f78185;
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(-66.6%);
+  }
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+/*X-Small devices (landscape phones, 576px and up)*/ 
+@media (min-width: 390px) and (max-width: 767.98px) { 
+  .title-section h1 {
+    font-size: 4rem;
+    line-height: 15px;
+  }
+  #font-outline-black {
+    -webkit-text-stroke: 1px white;
+  }
+  .about-img img {
+    width: 350px;
+    height: 350px;
+  }
+  .marquee {
+    width: 90%;
+  }
+  .list-inline {
+    font-size: 1.1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 767.98px) and (max-width: 991.98px) { 
+  .title-section h1 {
+    font-size: 6rem;
+    line-height: 25px;
+  }
+  #font-outline-black {
+    -webkit-text-stroke: 1px white;
+  }
+  .marquee {
+    width: 90%;
+  }
+ }
+
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 1199.98px) and (max-width: 1399.98px) { 
+  .title-section h1 {
+    font-size: 6rem;
+    line-height: 25px;
+  }
+  #font-outline-black {
+    -webkit-text-stroke: 1px white;
+  }
+
+ }
+

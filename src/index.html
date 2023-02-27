@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+  <link rel="stylesheet" href="scss/styles.scss">
+  <script type="module" src="./js/main.js"></script>
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-md justify-content-center navbar-dark">
+    <div class="container-fluid-nav text-center"> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav"> <a class="nav-link h6" href="#about">About</a> <a class="nav-link h6"
+            href="#projects">Projects</a> <a class="nav-link h6" href="#contact">Contact</a> </div>
+      </div>
+    </div>
+  </nav>
+  <div class="head">
+    <div class="title">
+      <h1 class="right-direction">Digital Designer Digital Designer Digital Designer</h1>
+      <h1 class="left-direction"> Designer Digital Designer Digital Designer Digital</h1>
+    </div>
+  </div> <canvas class="webgl"></canvas>
+  <div class="container-sm mt-5" style="margin-bottom: 50vh;">
+    <div class="thanks">
+      <div class="thanks-text">
+        <p id="sentence" class="h6">thanks for scrolling down...</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-sm mb-5" id="about" style="height: 30vh;">
+    <div class="title-section">
+      <h1 id="font-outline-black">about</h1>
+      <h1 id="middle">about</h1>
+      <h1 id="font-outline-black">about</h1>
+    </div>
+  </div>
+  <div class="container-sm mt-5" style="margin-bottom: 20vh;">
+    <div class="row">
+      <div class="col-lg-6 col-xs-12 d-flex align-items-center">
+        <p id="about-text" class="w-100">Hi!<br>My name is <span class="word-decoration">Thomas Tikovits</span> and I am
+          a graphic designer, UX/UI designer &amp; front-end web developer from Austria. I&#x27;m currently in my
+          bachelor studies in business informatics at the Vienna University of Economics and Business.</p>
+      </div>
+      <div class="col-lg-6 col-xs-12">
+        <div class="about-img"> <img src="./img/pc-nobg-small.gif" alt="Pc"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-sm">
+    <div class="row">
+      <div class="col-12">
+        <div class="marquee">
+          <div class="marquee__content">
+            <ul class="list-inline">
+              <li>Specialization</li>
+              <li>Specialization</li>
+              <li>Specialization</li>
+            </ul>
+            <ul class="list-inline">
+              <li>Specialization</li>
+              <li>Specialization</li>
+              <li>Specialization</li>
+            </ul>
+            <ul class="list-inline">
+              <li>Specialization</li>
+              <li>Specialization</li>
+              <li>Specialization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="cards-wrapper">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./img/r2d2.svg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="./img/r2d2.svg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
