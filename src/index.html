@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="scss/styles.scss">
   <script type="module" src="./js/main.js"></script>
   <title>My Portfolio</title>
@@ -52,7 +53,7 @@
       </div>
     </div>
   </div>
-  <div class="container-sm">
+  <div class="container-sm" style="margin-bottom: 30vh;">
     <div class="row">
       <div class="col-12">
         <div class="marquee">
@@ -84,7 +85,7 @@
           <div id="specialization" class="col-3  d-flex justify-content-center">
             <img src="./img/java.png">
           </div>
-          <div id="specialization" class="col-3  d-flex justify-content-center">
+          <div id="three" class="col-3  d-flex justify-content-center">
             <img src="./img/three.png">
           </div>
           <div id="specialization" class="col-3  d-flex justify-content-center">
@@ -109,12 +110,32 @@
       </div>
       </div>
     </div>
-  </div>
-  <!--<div class="col-12">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="cards-wrapper">
+    <div class="container-sm mb-5" id="projects" style="height: 30vh;">
+      <div class="title-section">
+        <h1 id="font-outline-black">projects</h1>
+        <h1 id="middle">projects</h1>
+        <h1 id="font-outline-black">projects</h1>
+      </div>
+    </div>
+    <div class="container-sm" style="margin-bottom: 30vh;">
+      <div class="row">
+    <div class="col-12">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="./img/r2d2.svg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
               <div class="card" style="width: 18rem;">
                 <img class="card-img-top" src="./img/r2d2.svg" alt="Card image cap">
                 <div class="card-body">
@@ -123,30 +144,48 @@
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="cards-wrapper">
-                <div class="card" style="width: 18rem;">
-                  <img class="card-img-top" src="./img/r2d2.svg" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </div> -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="container-sm" id="contact" style="height: 30vh;">
+      <div class="title-section">
+        <h1 id="font-outline-black">contact</h1>
+        <h1 id="middle">contact</h1>
+        <h1 id="font-outline-black">contact</h1>
+      </div>
+    </div>
+    <div class="container-sm mb-5">
+      <div class="row">
+          <div class="col-12 d-flex justify-content-center" style="margin-bottom: 20vh;">
+              <div class="grid-item" id="loop">Let's start a project together</div>
+          </div>
+          <div class="d-flex flex-row justify-content-center">
+              <div class="col-4 col-md-2 d-flex flex-column justify-content-center align-items-center">
+                  <div class="social-media"><a href="mailto:thomas.tikovits@gmail.com"><img id="mail" src="./img/mail.svg" alt="mail"></a></div>
+                  <p id="social-media-text">E-Mail</p>
+              </div>
+              <div class="col-4 col-md-2 d-flex flex-column justify-content-center align-items-center">
+                  <div class="social-media"><a href="https://www.instagram.com/thomastikovits/" target="_blank"><img id="insta" src="./img/insta.svg" alt="instagram"></a></div>
+                  <p id="social-media-text">Instagram</p>
+              </div>
+              <div class="col-4 col-md-2 d-flex flex-column justify-content-center align-items-center">
+                <div class="social-media"><a href="https://www.instagram.com/thomastikovits/" target="_blank"><img id="insta" src="./img/fb.svg" alt="instagram"></a></div>
+                <p id="social-media-text">Facebook</p>
+            </div>
+          </div>
+      </div>
+      </div>
 </body>
 </html>

@@ -104,3 +104,26 @@ const observer = new IntersectionObserver(function (entries, observer) {
 }, options);
 
 observer.observe(thx);
+
+// loop through array
+
+const text = ["Let's start a project together", "Lass uns gemeinsam ein Project starten", "Comencemos un proyecto juntos", "Commençons un projet ensemble", "Начнем проект вместе", "让我们一起开始一个项目"];
+function change() {
+  let index = 1;
+  setInterval(function() {
+    const currentValue = text[index];
+    const element = document.getElementById("loop");
+    
+    // Hinzufügen der Transition
+    element.style.opacity = 0;
+    setTimeout(function() {
+      element.innerHTML = currentValue;
+      element.style.opacity = 1;
+    }, 500);
+
+    index = (index + 1) % text.length;
+  }, 2000);
+}
+
+// Aufruf der Funktion
+change();
