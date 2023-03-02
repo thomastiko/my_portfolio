@@ -1,5 +1,5 @@
 // Import our custom CSS
-import '../scss/style.scss';
+import '../css/style.scss';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 
