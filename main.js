@@ -1,11 +1,9 @@
 // Import our custom CSS
-import '../scss/styles.scss';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 
 // Import only the Bootstrap components we need
 import 'bootstrap';
-
 // Create an example popover
 
   //Scene
@@ -127,3 +125,4 @@ function change() {
 
 // Aufruf der Funktion
 change();
+
